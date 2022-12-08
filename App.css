@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Oswald&display=swap'); 
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #688492 100%);
+}
+
+.wrapper {
+  font-family: 'Nixie One';
+  padding: 1em;
+  display: grid;
+  grid-template-rows: repeat(5, 2fr);
+}
+
+.question-title {
+  padding-top: 1.2em;
+}
+
+.question-sets {
+  margin-top: 0.2em;
+  height: 3em;
+}
+
+.question-buttons {
+  width: 8rem;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.question-buttons:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.question-buttons:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.answer-card {
+  padding: 0.5em;
+  min-height: 5em;
+}
+
+.score-card {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.answer-text {
+  min-height: 2rem;
+  padding-top: 1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.score-text {
+  min-height: 2rem;
+  padding-top: 1em;
+  font-size: 1rem;
+}
+
+.restart-button {
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 640px) {
+  .question-buttons {
+    width: 4rem;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-top: 0.2em;
+    font-size: 1.2rem;
+    padding-left: 0.5em;
+  }
+
+  .question-sets {
+    min-height: 6em;
+  }
+
+  .answer-card {
+    margin-top: 2em;
+    min-height: 1em;
+  }
+
+  .answer-text {
+    min-height: 2rem;
+    font-size: 1rem;
+  }
+
+  .score-card {
+    margin-top: 0.5em;
+  }
+  .wrapper {
+    padding: 0.1em;
+    padding-left: 12%;
+    width: 75vw;
+  }
+
+  .restart-button {
+    padding-top: 0em;
+    margin-top: -2em;
+  }
+  
+}
+
+.modal-button {
+  font-family: 'Oswald';
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  background-image: linear-gradient(120deg, rgba(253, 251, 251, 0), rgba(104, 132, 146, 0.7));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.7rem;
+  border-radius: 15px;
+}
